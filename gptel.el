@@ -413,6 +413,7 @@ To set the model for a chat session interactively call
           (string :tag "Specify model name")
           (const :tag "GPT 3.5 turbo" "gpt-3.5-turbo")
           (const :tag "GPT 3.5 turbo 16k" "gpt-3.5-turbo-16k")
+          (const :tag "GPT 4 omni" "gpt-4o")
           (const :tag "GPT 4" "gpt-4")
           (const :tag "GPT 4 turbo" "gpt-4-turbo")
           (const :tag "GPT 4 turbo (preview)" "gpt-4-turbo-preview")
@@ -446,7 +447,7 @@ with differing settings.")
    :stream t
    :models '("gpt-3.5-turbo" "gpt-3.5-turbo-16k" "gpt-4" "gpt-4-turbo"
              "gpt-4-turbo-preview" "gpt-4-32k" "gpt-4-1106-preview"
-             "gpt-4-0125-preview")))
+             "gpt-4-0125-preview" "gpt-4o")))
 
 (defcustom gptel-backend gptel--openai
   "LLM backend to use.
